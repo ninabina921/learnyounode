@@ -64,17 +64,21 @@
     "through2-map": "~2.0.0",
     "workshopper-adventure": "^4.4.5",
     "workshopper-exercise": "^2.6.0",
-    "workshopper-wrappedexec": "~0.1.1"
+    "workshopper-wrappedexec": "~0.1.1",
+    "snyk": "^1.83.0"
   },
   "devDependencies": {
     "workshopper-adventure-test": "~1.0.1"
   },
   "scripts": {
-    "test": "workshopper-adventure-test"
+    "test": "workshopper-adventure-test",
+    "snyk-protect": "snyk protect",
+    "prepare": "npm run snyk-protect"
   },
   "bin": {
     "learnyounode": "./bin/learnyounode"
   },
   "main": "./learnyounode.js",
-  "preferGlobal": true
+  "preferGlobal": true,
+  "snyk": true
 }
